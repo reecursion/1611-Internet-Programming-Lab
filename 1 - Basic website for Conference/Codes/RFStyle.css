@@ -1,0 +1,47 @@
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1581084243124-209fc8f93cf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGFyayUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+}
+.form {  
+    display: grid;
+    margin-top: 35px;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". formcontent ."
+      ". . .";
+}
+form{
+    margin-top: 15px; 
+}  
+input{
+    font-family: 'Poppins', sans-serif;
+}
+.formcontent { 
+    grid-area: formcontent; 
+    background-color: rgb(255, 253, 253);
+    padding: 50px;
+}
+
+.FormDetails{
+    font-size: 13px; 
+    margin: 0px;
+    padding-top: 2px;
+}
+
+.col {
+    padding:5px;
+    padding-left: 0px;
+    padding-bottom: 3px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left:0
+}

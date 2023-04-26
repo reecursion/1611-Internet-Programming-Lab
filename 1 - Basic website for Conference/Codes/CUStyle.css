@@ -1,0 +1,36 @@
+.contact {  
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-items: stretch;
+    grid-template-areas:
+      "contactinfo pngcontact";
+}
+  
+.pngcontact { 
+    grid-area: pngcontact; 
+    justify-content: center;
+    padding: 50px;
+}
+  
+.pngcontact img{
+    opacity: 0.2;
+}
+.contactinfo { 
+    grid-area: contactinfo; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.Email {
+    padding-left: 75px;
+    text-decoration-line: underline;
+    color: #2460a4;
+}
+  

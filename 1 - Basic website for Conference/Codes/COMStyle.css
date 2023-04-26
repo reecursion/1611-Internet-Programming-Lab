@@ -1,0 +1,71 @@
+.body {  display: grid;
+    grid-template-columns: 0.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+    grid-template-rows: 0.4fr 1.6fr 0.4fr 1.6fr 0.4fr 1.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: start;
+    align-items: stretch;
+    grid-template-areas:
+      ". title1 . . ."
+      ". genchair . . ."
+      ". title2 . . ."
+      ". prchair1 prchair2 prchair3 ."
+      ". title3 . . ."
+      ". strechair1 strechair2 . .";
+  }
+  
+  .title1 { grid-area: title1; }
+  
+  .title2 { grid-area: title2; }
+  
+  .title3 { grid-area: title3; }
+  
+  .genchair { grid-area: genchair; }
+  
+  .prchair1 { grid-area: prchair1; }
+  
+  .prchair2 { grid-area: prchair2; }
+  
+  .prchair3 { grid-area: prchair3; }
+  
+  .strechair1 { grid-area: strechair1; }
+  
+  .strechair2 { grid-area: strechair2; }
+  
+
+.Title h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; 
+    text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+}
+
+.Title h3:before {
+    background-color: #133b7c;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 75px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.Person img{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.Person{
+    position: relative;
+}
+
+p.caption{
+    position: relative;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.Person img:hover + p.caption{
+    opacity: 1;
+}
