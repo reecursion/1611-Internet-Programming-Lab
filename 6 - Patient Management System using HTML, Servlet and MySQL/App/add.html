@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            PMS | Add record
+        </title>
+    </head>
+    <body>
+        <h1>
+            Patient Details - Add record
+        </h1>
+        <div class = "links">
+            <a href = "add.html"> Add Record | </a> 
+            <a href = "update.html"> Update Record | </a> 
+            <a href = "delete.html"> Delete Record | </a> 
+            <a href = "ViewServlet"> View Record | </a> 
+            <a href = "search.html"> Search a Record </a> 
+        </div>
+        <br>
+        <form method="post" action="AddServlet">
+            ID: <input name="id" type = "text" style="margin-left: 100px;"><br><br>
+            Name: <input name="name" type = "text" style="margin-left: 79px;"><br><br>
+            Age: <input name="age" type = "text" style="margin-left: 92px;"><br><br>
+            Phone Number: <input name="phno" type = "text" style="margin-left: 23px;"><br><br>
+            Name of Disease: <input name="disease" type = "text" style="margin-left: 9px;"><br><br>
+            <input type = "submit" value = "Insert">
+        </form>
+    </body>
+</html>
