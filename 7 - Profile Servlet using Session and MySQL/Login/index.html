@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<head>
+    <title>Log-In</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <a href = "index.html"> Log-In | </a></li>
+        <li> <a href = "LogoutServlet"> Log-Out </a>  </li>
+    </ul>
+    <form action="LoginServlet" method="POST">
+        Username: <input type = "text" name = "username" style="margin-left: 10px;">
+        <br>
+        Password: <input type = "text" name = "password" style="margin-left: 11px;">
+        <br> <br>
+        <input type = "submit" value = "Log-In" style="align-items: center;">
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<head>
+    <title>Log-In</title>
+    <style>
+        /* Set background color */
+        body {
+            background-color: #f2e6ff;
+            text-align: center;
+        }
+
+        /* Style links in navigation */
+        ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding-left: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #7f5fbd;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #fff7f2;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #f2c6d7;
+        }
+
+        /* Style form inputs */
+        form {
+            margin-top: 50px;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 250px;
+        }
+
+        input[type="submit"] {
+            background-color: #7f5fbd;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f2c6d7;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Log-In</a></li>
+        <li><a href="LogoutServlet">Log-Out</a></li>
+    </ul>
+    <form action="LoginServlet" method="POST">
+        Username: <input type="text" name="username">
+        <br>
+        Password: <input type="password" name="password">
+        <br><br>
+        <input type="submit" value="Log-In">
+    </form>
+</body>
+</html>
