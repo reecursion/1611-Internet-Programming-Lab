@@ -1,0 +1,50 @@
+.workshops {
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.workshop {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.workshop h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.workshop p {
+  margin-bottom: 10px;
+}
+
+.workshop a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.workshop a:hover {
+  text-decoration: underline;
+}
+
+.workshop img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.workshop button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workshop button:hover {
+  background-color: #0056b3;
+}
